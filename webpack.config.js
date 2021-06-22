@@ -54,7 +54,7 @@ module.exports = (env, argv) =>{
             compress: true,
             port: env.port,
             watchContentBase: true,
-            //open: true
+            open: true
         },
         devtool: isDev?'source-map':false,
         plugins: plugins(),

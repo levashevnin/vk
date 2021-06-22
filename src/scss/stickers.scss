@@ -1,0 +1,96 @@
+@import "variables";
+@import "mixins";
+
+.field__stickers{
+  position: absolute;
+  top: $top-indent;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  height: $stickers-height;
+  min-width: 290px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+
+  .bott{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: $dark-border-color;
+    background-color: #EBEEF2;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    height: 36px;
+  }
+  .bott div:nth-child(1){
+    background-color: white;
+    border-bottom-left-radius: 4px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bott div:nth-child(2){
+    background-color: #EBEEF2;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bott div:nth-child(1):hover{
+    background-color: #DCE1E6;
+    cursor: pointer;
+  }
+  .bott div:nth-child(2):hover{
+    background-color: #DCE1E6;
+    cursor: pointer;
+  }
+
+  .head{
+
+    position: relative;
+
+    .emoji{
+      height: $emoji-header;
+      position: absolute;
+      margin: 10px 10px;
+      color: #939393;
+    }
+    .stickers{
+      overflow-y: auto;
+      height: $stickers-field-height;
+      left: 4px;
+      position: absolute;
+      top: $emoji-header;
+      width: 100%;
+      min-width: 269px;
+      min-height: 100%;
+      max-width: 284px;
+      display: inline;
+
+
+
+      .stickers_array{
+        display: flex;
+        width: 100%;
+        .element{
+          height: $emoji-height;
+          width: $emoji-width;
+          margin-left: 1px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 3px;
+          &:hover{
+            background-color: #F0F2F5;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
