@@ -42,7 +42,7 @@ class Dom {
                 this.$el.textContent = text
             }else this.$el.textContent += text
 
-            flag = 0
+
         }
         if(this.$el.textContent.length % 10 === 0){
             //this.$el.insertAdjacentHTML('beforeend', '<br>')
